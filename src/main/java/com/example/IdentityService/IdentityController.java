@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/identity")
-public class IdentityController {
+public class IdentityController implements IdentityApi {
     @Autowired
     private IdentityRepository identityRepository;
     @Autowired
